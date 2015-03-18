@@ -35,6 +35,7 @@ public class ButtonScript : MonoBehaviour {
 		//сортування писля кліка
 
 
+
 	}
 
 
