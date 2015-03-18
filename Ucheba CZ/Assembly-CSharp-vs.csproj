@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{379F038B-3A3F-DFE1-2C76-5B2C9713AEB0}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\1 Urok\Biki.cs" />
+     <Compile Include="Assets\1 Urok\DniTignya.cs" />
+     <Compile Include="Assets\1 Urok\Hello.cs" />
+     <Compile Include="Assets\1 Urok\KratniTrem.cs" />
+     <Compile Include="Assets\1 Urok\MaxMin.cs" />
+     <Compile Include="Assets\1 Urok\Misyaci.cs" />
+     <Compile Include="Assets\1 Urok\Naoborot.cs" />
+     <Compile Include="Assets\1 Urok\Parni.cs" />
+     <Compile Include="Assets\1 Urok\StepinN.cs" />
+     <Compile Include="Assets\1 Urok\SummCifr.cs" />
+     <Compile Include="Assets\1 Urok\SummMigCifr.cs" />
+     <Compile Include="Assets\1 Urok\TablMnog.cs" />
+     <Compile Include="Assets\1 Urok\Tonn.cs" />
+     <Compile Include="Assets\1 Urok\Trehznachni.cs" />
+     <Compile Include="Assets\1 Urok\Zarplata.cs" />
+     <Compile Include="Assets\2 Urok\III_ZaminaParnih.cs" />
+     <Compile Include="Assets\2 Urok\II_SummMass.cs" />
+     <Compile Include="Assets\2 Urok\IV_Dvovimir.cs" />
+     <Compile Include="Assets\2 Urok\IX_ZminaZnakiv.cs" />
+     <Compile Include="Assets\2 Urok\I_StvorMass.cs" />
+     <Compile Include="Assets\2 Urok\VIII_MinusivMass.cs" />
+     <Compile Include="Assets\2 Urok\VII_ZapovnMass.cs" />
+     <Compile Include="Assets\2 Urok\VI_Zrostanya.cs" />
+     <Compile Include="Assets\2 Urok\V_Rvani.cs" />
+     <Compile Include="Assets\2 Urok\XIII_Zvorot.cs" />
+     <Compile Include="Assets\2 Urok\XII_Simvoli.cs" />
+     <Compile Include="Assets\2 Urok\XIV_NapisSlovami.cs" />
+     <Compile Include="Assets\2 Urok\XI_MaxDovgina.cs" />
+     <Compile Include="Assets\2 Urok\X_Podvoennya.cs" />
+     <Compile Include="Assets\3 Urok OOP\OOP.cs" />
+     <Compile Include="Assets\4 Urok Obyekti\Scripts\Obyekti.cs" />
+     <Compile Include="Assets\4 Urok Obyekti\Scripts\Urok_4_Zavd_2.cs" />
+     <Compile Include="Assets\4 Urok Obyekti\Scripts\ZirkaSkript.cs" />
+     <Compile Include="Assets\Urok_4_Zavd_2_Obj.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
