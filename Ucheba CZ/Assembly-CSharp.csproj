@@ -78,8 +78,8 @@
      <Compile Include="Assets\3 Urok OOP\OOP.cs" />
      <Compile Include="Assets\4 Urok Obyekti\Scripts\Obyekti.cs" />
      <Compile Include="Assets\4 Urok Obyekti\Scripts\Urok_4_Zavd_2.cs" />
+     <Compile Include="Assets\4 Urok Obyekti\Scripts\Urok_4_Zavd_2_Obj.cs" />
      <Compile Include="Assets\4 Urok Obyekti\Scripts\ZirkaSkript.cs" />
-     <Compile Include="Assets\Urok_4_Zavd_2_Obj.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
