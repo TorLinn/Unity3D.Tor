@@ -25,7 +25,7 @@ public class Urok_4_Zavd_2_Obj : MonoBehaviour {
 	void OnMouseEnter () {
 		for (int i = x-1; i < x+2; i++) {
 			for (int j = y-1; j < y+2; j++) {
-				if ((i >= 0 && i < 6) && (j >= 0 && j < 6)) {
+				if ((i >= 0 && i < Urok_4_Zavd_2.razm) && (j >= 0 && j < Urok_4_Zavd_2.razm)) {
 					Urok_4_Zavd_2.kollMas[i, j].GetComponent<SpriteRenderer> ().color = Color.green;
 				}
 			}
@@ -34,8 +34,8 @@ public class Urok_4_Zavd_2_Obj : MonoBehaviour {
 	}
 	
 	void OnMouseExit () {
-		for (int i = 0; i < 6; i++) {
-			for (int j = 0; j < 6; j++) {
+		for (int i = 0; i < Urok_4_Zavd_2.razm; i++) {
+			for (int j = 0; j < Urok_4_Zavd_2.razm; j++) {
 				Urok_4_Zavd_2.kollMas[i, j].GetComponent<SpriteRenderer> ().color = Color.white;
 			}
 		}
