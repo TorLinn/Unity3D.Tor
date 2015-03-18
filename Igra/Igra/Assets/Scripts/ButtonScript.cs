@@ -19,7 +19,7 @@ public class ButtonScript : MonoBehaviour {
 
 				//цикл для підйому пустих
 
-				for (int i = y-1; i < 25; i++) {
+				/*for (int i = y-1; i < 25; i++) {
 					for (int j = i+1; j < 25; j++)
 					{
 						Color temp = Main_Script.kollMas[x, i].GetComponent<SpriteRenderer> ().color;
@@ -29,18 +29,18 @@ public class ButtonScript : MonoBehaviour {
 						//Main_Script.kollMas[x, j].GetComponent<SpriteRenderer> ().color=Main_Script.kollMas[i, j+1].GetComponent<SpriteRenderer> ().color;
 						
 					}
-				}
+				}*/
 
 
 				count = 1;
 			}
-			if ((y + 1 <= 24) && (GetComponent<SpriteRenderer> ().color == Main_Script.kollMas [x, y + 1].GetComponent<SpriteRenderer> ().color)) {
+			if ((y + 1 <= 8) && (GetComponent<SpriteRenderer> ().color == Main_Script.kollMas [x, y + 1].GetComponent<SpriteRenderer> ().color)) {
 				//Destroy(Main_Script.kollMas [x, y + 1]);
 				Main_Script.kollMas [x, y + 1].GetComponent<SpriteRenderer> ().color = Color.clear;
 
 				//цикл для підйому пустих
 					
-				for (int i = y+1; i < 25; i++) {
+				/*for (int i = y+1; i < 25; i++) {
 					for (int j = i+1; j < 25; j++)
 					{
 						Color temp = Main_Script.kollMas[x, i].GetComponent<SpriteRenderer> ().color;
@@ -50,7 +50,7 @@ public class ButtonScript : MonoBehaviour {
 						//Main_Script.kollMas[x, j].GetComponent<SpriteRenderer> ().color=Main_Script.kollMas[i, j+1].GetComponent<SpriteRenderer> ().color;
 						
 					}
-				}
+				}*/
 
 				count = 1;
 			}
@@ -60,7 +60,7 @@ public class ButtonScript : MonoBehaviour {
 
 				//цикл для підйому пустих
 				
-				for (int i = y; i < 25; i++) {
+				/*for (int i = y; i < 25; i++) {
 					for (int j = i+1; j < 25; j++)
 					{
 						Color temp = Main_Script.kollMas[x-1, i].GetComponent<SpriteRenderer> ().color;
@@ -70,17 +70,17 @@ public class ButtonScript : MonoBehaviour {
 						//Main_Script.kollMas[x, j].GetComponent<SpriteRenderer> ().color=Main_Script.kollMas[i, j+1].GetComponent<SpriteRenderer> ().color;
 						
 					}
-				}
+				}*/
 
 				count = 1;
 			}
-			if ((x + 1 <= 14) && (GetComponent<SpriteRenderer> ().color == Main_Script.kollMas [x + 1, y].GetComponent<SpriteRenderer> ().color)) {
+			if ((x + 1 <= 8) && (GetComponent<SpriteRenderer> ().color == Main_Script.kollMas [x + 1, y].GetComponent<SpriteRenderer> ().color)) {
 				//Destroy(Main_Script.kollMas [x + 1, y]);
 				Main_Script.kollMas [x + 1, y].GetComponent<SpriteRenderer> ().color = Color.clear;
 
 				//цикл для підйому пустих
 				
-				for (int i = y; i < 25; i++) {
+				/*for (int i = y; i < 25; i++) {
 					for (int j = i+1; j < 25; j++)
 					{
 						Color temp = Main_Script.kollMas[x+1, i].GetComponent<SpriteRenderer> ().color;
@@ -90,7 +90,7 @@ public class ButtonScript : MonoBehaviour {
 						//Main_Script.kollMas[x, j].GetComponent<SpriteRenderer> ().color=Main_Script.kollMas[i, j+1].GetComponent<SpriteRenderer> ().color;
 						
 					}
-				}
+				}*/
 
 				count = 1;
 			}
@@ -98,7 +98,7 @@ public class ButtonScript : MonoBehaviour {
 			if (count != 0) {
 				//Destroy(gameObject);
 				GetComponent<SpriteRenderer> ().color = Color.clear;
-				for (int i = y; i < 25; i++) {
+				/*for (int i = y; i < 25; i++) {
 					for (int j = i+1; j < 25; j++)
 					{
 						Color temp = Main_Script.kollMas[x, i].GetComponent<SpriteRenderer> ().color;
@@ -108,13 +108,30 @@ public class ButtonScript : MonoBehaviour {
 						//Main_Script.kollMas[x, j].GetComponent<SpriteRenderer> ().color=Main_Script.kollMas[i, j+1].GetComponent<SpriteRenderer> ().color;
 
 					}
-				}
+				}*/
 			}
+
 		}
 
 		//сортування писля кліка
 
-		
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if (Main_Script.kollMas [i, j].GetComponent<SpriteRenderer> ().color == Color.clear) {
+					for (int o = j; o < 9; o++) {
+						for (int p = j+1; p < 9; p++)
+						{
+							Color temp = Main_Script.kollMas[i, o].GetComponent<SpriteRenderer> ().color;
+							Main_Script.kollMas[i, o].GetComponent<SpriteRenderer> ().color = Main_Script.kollMas[i, p].GetComponent<SpriteRenderer> ().color;
+							Main_Script.kollMas[i, p].GetComponent<SpriteRenderer> ().color = temp;
+							
+							//Main_Script.kollMas[x, j].GetComponent<SpriteRenderer> ().color=Main_Script.kollMas[i, j+1].GetComponent<SpriteRenderer> ().color;
+							
+						}
+					}
+				}
+			}
+		}
 
 
 
