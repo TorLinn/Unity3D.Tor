@@ -12,8 +12,8 @@ public class Main_Script : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		for (int i = 0; i < razmX; i++) {
-			for (int j = 0; j < razmY; j++) {
+		for (int i = 0; i < 15; i++) {
+			for (int j = 0; j < 25; j++) {
 				int d = Random.Range(0, 5);
 				kollMas[i,j] = (GameObject)Instantiate (kolll, new Vector3 (0+i, 0+j, 0), new Quaternion (0f, 0f, 0f, 0f));
 				kollMas[i,j].GetComponent<SpriteRenderer> ().color = cVet[d];
@@ -26,6 +26,15 @@ public class Main_Script : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+		/*for (int i = 0; i < 15; i++) {
+			for (int j = 0; j < 25; j++) {
+				int d = Random.Range(0, 5);
+				Main_Script.kollMas[i,j] = (GameObject)Instantiate (kolll, new Vector3 (0+i, 0+j, 0), new Quaternion (0f, 0f, 0f, 0f));
+				
+				
+			}
+		}
+	*/
 	}
 }
