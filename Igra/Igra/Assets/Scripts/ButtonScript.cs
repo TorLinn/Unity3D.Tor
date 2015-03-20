@@ -9,22 +9,22 @@ public class ButtonScript : MonoBehaviour {
 
 	private void poisk (int f, int z, Color colLor) {
 		Color tempC = colLor;
-			if ((z - 1 >= 0) && (tempC == Main_Script.kollMas [f, z - 1].GetComponent<SpriteRenderer> ().color)) {
-				Main_Script.kollMas [f, z - 1].GetComponent<SpriteRenderer> ().color = Color.clear;
-				Main_Script.kollMas [f , z].GetComponent<SpriteRenderer> ().color = Color.clear;
-				poisk (f,z-1,tempC);
-			}
-			if ((z + 1 <= 24) && (tempC == Main_Script.kollMas [f, z + 1].GetComponent<SpriteRenderer> ().color)) {
-				Main_Script.kollMas [f,z+1].GetComponent<SpriteRenderer> ().color = Color.clear;
-				Main_Script.kollMas [f , z].GetComponent<SpriteRenderer> ().color = Color.clear;
-				poisk (f,z+1,tempC);
-			}
-			if ((f - 1 >= 0) && (tempC == Main_Script.kollMas [f - 1, z].GetComponent<SpriteRenderer> ().color)) {
-				Main_Script.kollMas [f - 1, z].GetComponent<SpriteRenderer> ().color = Color.clear;
-				Main_Script.kollMas [f , z].GetComponent<SpriteRenderer> ().color = Color.clear;
-				poisk (f-1,z,tempC);
-			}
-			if ((f + 1 <= 14) && (tempC == Main_Script.kollMas [f + 1, z].GetComponent<SpriteRenderer> ().color)) {
+		if ((z - 1 >= 0) && (tempC == Main_Script.kollMas [f, z - 1].GetComponent<SpriteRenderer> ().color)) {
+			Main_Script.kollMas [f, z - 1].GetComponent<SpriteRenderer> ().color = Color.clear;
+			Main_Script.kollMas [f , z].GetComponent<SpriteRenderer> ().color = Color.clear;
+			poisk (f,z-1,tempC);
+		}
+		if ((z + 1 <= 24) && (tempC == Main_Script.kollMas [f, z + 1].GetComponent<SpriteRenderer> ().color)) {
+			Main_Script.kollMas [f,z+1].GetComponent<SpriteRenderer> ().color = Color.clear;
+			Main_Script.kollMas [f , z].GetComponent<SpriteRenderer> ().color = Color.clear;
+			poisk (f,z+1,tempC);
+		}
+		if ((f - 1 >= 0) && (tempC == Main_Script.kollMas [f - 1, z].GetComponent<SpriteRenderer> ().color)) {
+			Main_Script.kollMas [f - 1, z].GetComponent<SpriteRenderer> ().color = Color.clear;
+			Main_Script.kollMas [f , z].GetComponent<SpriteRenderer> ().color = Color.clear;
+			poisk (f-1,z,tempC);
+		}
+		if ((f + 1 <= 14) && (tempC == Main_Script.kollMas [f + 1, z].GetComponent<SpriteRenderer> ().color)) {
 			Main_Script.kollMas [f + 1, z].GetComponent<SpriteRenderer> ().color = Color.clear;
 			Main_Script.kollMas [f, z].GetComponent<SpriteRenderer> ().color = Color.clear;
 			poisk (f + 1, z, tempC);
