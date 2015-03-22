@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Sferi/Sferi/Assets/Scripts/knopka.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Sferi\Sferi\Assets\Scripts\knopka.cs">
     <Files>
-      <File FileName="../../Sferi/Sferi/Assets/Scripts/MainScript.cs" Line="16" Column="94" />
-      <File FileName="Assets/Scripts/Main_Script.cs" Line="1" Column="1" />
-      <File FileName="../../Ucheba CZ/Assets/4 Urok Obyekti/Scripts/Obyekti.cs" Line="1" Column="1" />
-      <File FileName="../../Sferi/Sferi/Assets/Scripts/knopka.cs" Line="9" Column="5" />
+      <File FileName="..\..\Sferi\Sferi\Assets\Scripts\MainScript.cs" Line="1" Column="1" />
+      <File FileName="..\..\Sferi\Sferi\Assets\Scripts\knopka.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

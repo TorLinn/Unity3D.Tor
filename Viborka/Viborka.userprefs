@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ViborkaMain.cs">
+    <Files>
+      <File FileName="Assets\Scripts\ViborkaMain.cs" Line="18" Column="38" />
+      <File FileName="..\Igra\Igra\Assets\Scripts\Main_Script.cs" Line="18" Column="112" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
