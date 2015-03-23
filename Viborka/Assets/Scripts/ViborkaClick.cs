@@ -7,7 +7,8 @@ public class ViborkaClick : MonoBehaviour {
 		
 	void OnMouseDown (){
 		print (gameObject.name);
-		print(transform.Find ("cilindr").transform.name);
+		//print(transform.Find ("cilindr").transform.name);
+		gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 
 	}
 
