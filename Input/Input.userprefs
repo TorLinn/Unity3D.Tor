@@ -1,6 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RGB.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Konus.cs" Line="15" Column="52" />
+      <File FileName="Assets\Scripts\RGB.cs" Line="29" Column="39" />
+      <File FileName="Assets\Scripts\RuhCam.cs" Line="16" Column="4" />
+      <File FileName="..\Igra\Igra\Assets\Scripts\Main_Script.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
