@@ -20,7 +20,7 @@ public class RGB : MonoBehaviour {
 		distB = Vector3.Distance (B.position, transform.position);
 		summ = distR + distG + distB;
 		print (distR+" "+distG+" "+distB);
-		if ((distR < distG) &&(distR < distB)) {
+		/*if ((distR < distG) &&(distR < distB)) {
 			transform.GetComponent<SpriteRenderer> ().color = new Color (1f,0,0);
 		}
 		else if ((distG < distR) && (distG < distB)) {
@@ -28,8 +28,8 @@ public class RGB : MonoBehaviour {
 		}
 		else if ((distB < distR) && (distB < distG)) {
 			transform.GetComponent<SpriteRenderer> ().color = new Color (0,0,1f);
-		}
-		//transform.GetComponent<SpriteRenderer> ().color = new Color /*(0,1f,0);*/(distR/summ, distG/summ, distB/summ);
+		}*/
+		transform.GetComponent<SpriteRenderer> ().color = new Color /*(0,1f,0);*/(1-distR/summ, 1-distG/summ, 1-distB/summ);
 
 	
 	}
