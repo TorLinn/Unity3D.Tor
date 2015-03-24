@@ -13,23 +13,14 @@ public class RGB : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButton(0)) {
-			transform.position += new Vector3 (Input.GetAxis("Mouse X")/2, Input.GetAxis("Mouse Y")/2, 0);
+			transform.position += new Vector3 (Input.GetAxis("Mouse X")/3, Input.GetAxis("Mouse Y")/3, 0);
 		}
 		distR = Vector3.Distance (R.position, transform.position);
 		distG = Vector3.Distance (G.position, transform.position);
 		distB = Vector3.Distance (B.position, transform.position);
 		summ = distR + distG + distB;
 		print (distR+" "+distG+" "+distB);
-		/*if ((distR < distG) &&(distR < distB)) {
-			transform.GetComponent<SpriteRenderer> ().color = new Color (1f,0,0);
-		}
-		else if ((distG < distR) && (distG < distB)) {
-			transform.GetComponent<SpriteRenderer> ().color = new Color (0,1f,0);
-		}
-		else if ((distB < distR) && (distB < distG)) {
-			transform.GetComponent<SpriteRenderer> ().color = new Color (0,0,1f);
-		}*/
-		transform.GetComponent<SpriteRenderer> ().color = new Color /*(0,1f,0);*/(1-distR/summ, 1-distG/summ, 1-distB/summ);
+		transform.GetComponent<SpriteRenderer> ().color = new Color ((10-distR)/10, (10-distG)/10, (10-distB)/10);
 
 	
 	}
