@@ -7,6 +7,8 @@ public class Player1 : MonoBehaviour {
 	GameObject puliya;
 	Rigidbody2D person;
 	Vector2 napr = new Vector2 (1, 0);
+	public int HP = 100;
+	public int POint = 0;
 
 	// Use this for initialization
 	void Start () {
