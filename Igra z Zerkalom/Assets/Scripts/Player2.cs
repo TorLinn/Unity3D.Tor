@@ -36,7 +36,7 @@ public class Player2 : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Space)) {
 			Vector3 trasa = gameObject.transform.position;
 			puliya = (GameObject) Instantiate (obj, trasa, new Quaternion (0f, 0f, 0f, 0f));
-			puliya.GetComponent<Rigidbody2D>().velocity = napr*2;
+			puliya.GetComponent<Rigidbody2D>().velocity = napr*4;
 		}		
 		
 	}

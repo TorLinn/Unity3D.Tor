@@ -1,16 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Fin.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Vrag.cs">
     <Files>
-      <File FileName="Assets/Scripts/Fin.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/Player1.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player2.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Fin.cs" Line="12" Column="43" />
+      <File FileName="Assets/Scripts/Player1.cs" Line="39" Column="56" />
+      <File FileName="Assets/Scripts/Player2.cs" Line="39" Column="56" />
       <File FileName="../Igra/Igra/Assets/Scripts/Main_Script.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Puliya.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Yaschik.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Lechilka.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Vrag.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Vrag.cs" Line="7" Column="17" />
       <File FileName="Assets/Scripts/Golda.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/XPText.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HPtext.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
