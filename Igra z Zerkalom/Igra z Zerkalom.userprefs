@@ -1,6 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Vrag.cs">
+    <Files>
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\Alien.cs" Line="64" Column="3" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\alienSensor.cs" Line="2" Column="26" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\Bonus.cs" Line="1" Column="1" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\GameOver.cs" Line="1" Column="1" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\Mover.cs" Line="1" Column="1" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\SceneGenerator.cs" Line="1" Column="1" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\scrPlayer.cs" Line="1" Column="1" />
+      <File FileName="..\..\Unity3D\Game2Mazed\Assets\Scripts\Shot.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Generaciya.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Fin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Vrag.cs" Line="54" Column="39" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

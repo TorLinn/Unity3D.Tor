@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/sRay.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Sfera.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/Click.cs" Line="24" Column="1" />
+      <File FileName="../Igra/Igra/Assets/Scripts/Main_Script.cs" Line="1" Column="1" />
+      <File FileName="../Viborka/Assets/Scripts/ViborkaMain.cs" Line="1" Column="1" />
+      <File FileName="Assets/sRay.cs" Line="22" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

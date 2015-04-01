@@ -26,6 +26,6 @@ public class Fin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }
