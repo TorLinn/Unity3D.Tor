@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{9BD13483-1C82-21AC-C773-49A55212E24F}") = "3vrad", "Assembly-CSharp-firstpass.csproj", "{0675C016-AF47-1FA0-5360-00DAF29791AE}"
+EndProject
 Project("{9BD13483-1C82-21AC-C773-49A55212E24F}") = "3vrad", "Assembly-CSharp.csproj", "{605176C0-4CD4-EDC8-F2AB-CFCAD6F776F7}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0675C016-AF47-1FA0-5360-00DAF29791AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0675C016-AF47-1FA0-5360-00DAF29791AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0675C016-AF47-1FA0-5360-00DAF29791AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0675C016-AF47-1FA0-5360-00DAF29791AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{605176C0-4CD4-EDC8-F2AB-CFCAD6F776F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{605176C0-4CD4-EDC8-F2AB-CFCAD6F776F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{605176C0-4CD4-EDC8-F2AB-CFCAD6F776F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -36,4 +42,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal

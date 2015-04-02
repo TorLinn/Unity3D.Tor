@@ -56,23 +56,6 @@ public class ButtonScript : MonoBehaviour {
 				Main_Script.kollMas [i, j].GetComponent<SpriteRenderer> ().color = tmpColors [j];
 			}
 		}
-
-
-		//сортування писля кліка
-
-		/*for (int p = 0; p < 25; p++) {
-			for (int i = 0; i < 15; i++) {
-				for (int j = 0; j < 24; j++) {
-					for (int o = j+1; o < 25; o++) {
-						if (Main_Script.kollMas [i, j].GetComponent<SpriteRenderer> ().color == Color.clear) {
-							Color temp = Main_Script.kollMas [i, j].GetComponent<SpriteRenderer> ().color;
-							Main_Script.kollMas [i, j].GetComponent<SpriteRenderer> ().color = Main_Script.kollMas [i, o].GetComponent<SpriteRenderer> ().color;
-							Main_Script.kollMas [i, o].GetComponent<SpriteRenderer> ().color = temp;
-						}
-					}
-				}
-			}
-		}*/
 	}
 
 	// Use this for initialization
