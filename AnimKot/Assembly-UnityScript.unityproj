@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{2F011B85-B796-6E05-16F1-AF47318CE0FC}</ProjectGuid>
+	<ProjectGuid>{32C48924-7E10-2C5E-C909-94C7022DBDD1}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,11 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Bullet.cs" />
-     <Compile Include="Assets\Scripts\Golda.cs" />
-     <Compile Include="Assets\Scripts\Monstr.cs" />
-     <Compile Include="Assets\Scripts\Ruh.cs" />
-     <Compile Include="Assets\Scripts\Txt.cs" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\1536307499-bc_manager_core.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\1636177948-kix_main_i18n_kix_core__uk.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\65698159.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\65698178.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\api.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\dn.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\plusone.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\uk_101.js" />
+     <Compile Include="Assets\Персонаж та суперник - Google Документи_files\uk_t_i0_und.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

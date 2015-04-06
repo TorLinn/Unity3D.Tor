@@ -12,7 +12,12 @@ public class Txt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gameObject.GetComponent<Text> ().text = "Gold = " + obj.GetComponent<Ruh> ().Gold;
+		if (gameObject.name == "Gold") {
+			gameObject.GetComponent<Text> ().text = "Gold = " + obj.GetComponent<Ruh> ().Gold;
+		}
+		if (gameObject.name == "HP") {
+			gameObject.GetComponent<Text> ().text = "HP = " + obj.GetComponent<Ruh> ().HP;
+		}
 
 	
 	}

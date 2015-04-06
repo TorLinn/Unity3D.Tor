@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: 6b4e1b93026134bec9add0453c2dfd47
+timeCreated: 1428313249
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Gorg_0
+    21300002: Gorg_1
+    21300004: Gorg_2
+    21300006: Gorg_3
+    21300008: Gorg_4
+    21300010: Gorg_5
+    21300012: Gorg_6
+    21300014: Gorg_7
+    21300016: Gorg_8
+    21300018: Gorg_9
+    21300020: Gorg_10
+    21300022: Gorg_11
+    21300024: Gorg_12
+    21300026: Gorg_13
+    21300028: Gorg_14
+    21300030: Gorg_15
+    21300032: Gorg_16
+    21300034: Gorg_17
+    21300036: Gorg_18
+    21300038: Gorg_19
+    21300040: Gorg_20
+    21300042: Gorg_21
+    21300044: Gorg_22
+    21300046: Gorg_23
+    21300048: Gorg_24
+    21300050: Gorg_25
+    21300052: Gorg_26
+    21300054: Gorg_27
+    21300056: Gorg_28
+    21300058: Gorg_29
+    21300060: Gorg_30
+    21300062: Gorg_31
+    21300064: Gorg_32
+    21300066: Gorg_33
+    21300068: Gorg_34
+    21300070: Gorg_35
+    21300072: Gorg_36
+    21300074: Gorg_37
+    21300076: Gorg_38
+    21300078: Gorg_39
+    21300080: Gorg_40
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Gorg_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 747
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 749
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 750
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 751
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 668
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 637
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_6
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 668
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 664
+        width: 66
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 661
+        width: 66
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_9
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 674
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_10
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 674
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 566
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_12
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 575
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_13
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 575
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_14
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 568
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 450
+        width: 56
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_16
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 453
+        width: 56
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_17
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 443
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_18
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 444
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_19
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 449
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_20
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 453
+        width: 63
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_21
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 365
+        width: 76
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 365
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_23
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 361
+        width: 77
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_24
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 361
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_25
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 358
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_26
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 356
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 191
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_28
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 189
+        width: 66
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 185
+        width: 75
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_30
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 182
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_31
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 180
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 116
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_33
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 114
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_34
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 105
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_35
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 102
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 44
+        width: 70
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_37
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 40
+        width: 69
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_38
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 38
+        width: 71
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_39
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 22
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gorg_40
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 24
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
