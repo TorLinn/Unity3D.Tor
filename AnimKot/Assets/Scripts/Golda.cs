@@ -7,7 +7,7 @@ public class Golda : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col)
 	{
 		if (col.name == "Kot") {
-			col.GetComponent<Ruh>().Gold += 10;
+			Ruh.Gold += 10;
 			Destroy(gameObject);
 		}	
 

@@ -14,10 +14,10 @@ public class Monstr : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.name == "pul2") {
+		if (col.name == "pul2(Clone)") {
 			Destroy (col.gameObject);
 			gameObject.transform.position = new Vector3 (12,2,0);
-			kot.GetComponent<Ruh>().Gold +=30;
+			Ruh.Gold +=30;
 		}
 	}
 
@@ -25,7 +25,6 @@ public class Monstr : MonoBehaviour {
 	{
 		if (timer > 1) {
 			GameObject obj = (GameObject)Instantiate (pulja, gameObject.transform.position, Quaternion.identity);
-			print("!");
 			obj.GetComponent<Rigidbody2D> ().velocity = new Vector2 (10 * ruh, 0);
 			timer = 0;
 		}

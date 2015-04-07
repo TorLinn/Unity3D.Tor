@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class Ruh : MonoBehaviour {
 
-	public int Gold = 0;
-	public int HP = 100;
+	public static int Gold = 0;
+	public static int HP = 100;
 	public Transform sens;
 	public LayerMask laypov;
 	public GameObject pula;
@@ -16,10 +16,11 @@ public class Ruh : MonoBehaviour {
 	float timer = 0;
 	float ruh = 0;
 	float ruhp=1;
+	Vector3 kam;
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.name == "pulya") {
+		if (col.name == "pulya(Clone)") {
 			Destroy (col.gameObject);
 			HP  = HP - 30;
 			if (HP < 0) {
@@ -38,12 +39,16 @@ public class Ruh : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		kam =  Camera.main.transform.position - gameObject.transform.position;
 		anim = gameObject.GetComponent<Animator> ();
 		rB = gameObject.GetComponent<Rigidbody2D> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		Camera.main.transform.position = gameObject.transform.position + kam;
+
 		if (zeml && Input.GetKeyDown(KeyCode.Space)) {
 			anim.SetBool("Grunt",false);
 			rB.velocity = new Vector2(rB.velocity.x, 9f);

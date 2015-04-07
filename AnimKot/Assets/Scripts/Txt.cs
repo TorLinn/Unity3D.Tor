@@ -13,10 +13,10 @@ public class Txt : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (gameObject.name == "Gold") {
-			gameObject.GetComponent<Text> ().text = "Gold = " + obj.GetComponent<Ruh> ().Gold;
+			gameObject.GetComponent<Text> ().text = "Gold = " + Ruh.Gold;
 		}
 		if (gameObject.name == "HP") {
-			gameObject.GetComponent<Text> ().text = "HP = " + obj.GetComponent<Ruh> ().HP;
+			gameObject.GetComponent<Text> ().text = "HP = " + Ruh.HP;
 		}
 
 	
