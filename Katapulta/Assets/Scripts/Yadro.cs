@@ -2,18 +2,32 @@
 using System.Collections;
 
 public class Yadro : MonoBehaviour {
-	Rigidbody2D person;
+	public bool daged = false;
+	public GameObject traek; //префаб траэктории
+	float timer;
+	GameObject obj;
+	GameObject objJ;
+
+	void OnCollisionEnter2D (Collision2D сol){
+		daged = true;
+	}
 
 	// Use this for initialization
 	void Start () {
-		person = GetComponent<Rigidbody2D> ();
-	
+		objJ = GameObject.Find("traektor");
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			person.AddForce (new Vector2 (1000f, 0f));
+		timer += Time.deltaTime; 
+
+		//рисование траектории
+		if (timer>0.1f) {
+			if ((GetComponent<DistanceJoint2D>().enabled == false) && (transform.position.y>0.1f) && (!GetComponent<Yadro>().daged)) {
+				obj = (GameObject) Instantiate (traek, transform.position, Quaternion.identity);
+				obj.transform.parent = objJ.transform;
+				timer = 0;
+			}
 		}
 	}
 }
