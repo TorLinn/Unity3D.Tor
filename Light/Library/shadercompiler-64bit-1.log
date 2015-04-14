@@ -1,3 +1,32 @@
+<<<<<<< HEAD
+Base path: /Applications/Unity/Unity.app/Contents
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-1951879552
+Cmd: getPlatforms
+Cmd: preprocess
+  insize=1248 outsize=340 ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=1210 outsize=727 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=1210 outsize=6 kw= ok=1
+Cmd: preprocess
+  insize=1306 outsize=373 ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=1235 outsize=731 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=1235 outsize=6 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=7075 outsize=2515 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=7075 outsize=6 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=3755 outsize=1476 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=3755 outsize=6 kw=DIRECTIONAL ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=3755 outsize=1946 kw=SPOT ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=3755 outsize=6 kw=SPOT ok=1
+=======
 Base path: C:/Program Files/Unity/Editor/Data
 Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-1480
 Cmd: getPlatforms
@@ -25,3 +54,4 @@ Cmd: compileSnippet
   api=4 type=0 insize=7502 outsize=6303 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=7502 outsize=2672 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON ok=1
+>>>>>>> FETCH_HEAD

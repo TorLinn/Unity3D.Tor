@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
 
 	public int Score = 0;
-	public Text can;
+	public Text canva;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +14,6 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		can.text = " Score = " + Score;
+		canva.text = " Score = " + Score;
 	}
 }

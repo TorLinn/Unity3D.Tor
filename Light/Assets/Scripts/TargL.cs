@@ -11,6 +11,7 @@ public class TargL : MonoBehaviour {
 		if (col.tag == "Player") {
 			Destroy(gameObject);
 			col.transform.GetComponent<Player>().Score +=1;
+			print (col.transform.GetComponent<Player>().Score);
 			obj = (GameObject) Instantiate (targ, new Vector3 (Random.Range (50,350), 200, Random.Range (50,350)), Quaternion.identity);
 			obj.GetComponent<Light>().enabled = true;
 		}

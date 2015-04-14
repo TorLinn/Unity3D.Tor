@@ -2,8 +2,14 @@
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="..\Katapulta\Assets\Scripts\Main.cs">
     <Files>
+<<<<<<< HEAD
+      <File FileName="Assets/Scripts/Play.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Monetka.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Monstr.cs" Line="1" Column="1" />
+=======
       <File FileName="..\Katapulta\Assets\Scripts\Yadro.cs" Line="5" Column="1" />
       <File FileName="..\Katapulta\Assets\Scripts\Main.cs" Line="20" Column="5" />
+>>>>>>> FETCH_HEAD
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

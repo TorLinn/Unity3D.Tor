@@ -17,6 +17,16 @@ public class Play : MonoBehaviour {
 	void Update () {
 		Scor.text = " Score = " + Score;
 		Hits.text = " HP = " + HP;
+
+		if (Input.GetMouseButtonDown (0)) {
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			RaycastHit hit;
+			if (Physics.Raycast (ray, out hit, 200f)) {
+				GetComponent<NavMeshAgent> ().SetDestination (hit.point);
+			}
+		}
+
+
 		if (Mathf.Abs (Vector3.Distance (navAgent.velocity, new Vector3 (0, 0, 0))) < 0.1f) {
 			GameObject[] coins = GameObject.FindGameObjectsWithTag ("Moneta");
 			if (coins.Length > 0) {
