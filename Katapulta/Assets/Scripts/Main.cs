@@ -73,7 +73,7 @@ public class Main : MonoBehaviour {
 
 	public void Stvor () {
 		Destroy(GameObject.Find("Yadro"));
-		yadrn  = (GameObject) Instantiate (yadr[i], new Vector3 (-9.5f, 1.05f, 0), Quaternion.identity);
+		yadrn  = (GameObject) Instantiate (yadr[i], new Vector3 (-11.285f, 0.81f, 0), Quaternion.identity);
 		yadrn.name = "Yadro";
 		yadrn.transform.parent = paryadr.transform;
 		yadrn.GetComponent<DistanceJoint2D>().enabled = true;
