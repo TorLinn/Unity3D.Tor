@@ -7,17 +7,15 @@ public class Main : MonoBehaviour {
 	public GameObject palka;	//коромысло
 	public GameObject [] yadr;	//ядро
 	public GameObject gru;		//противовес
-	public GameObject paryadr;	// отйовская для ядер
+	public GameObject paryadr;	// отцовская для ядер
 	public Text Yadra, Sc;		//текст для пользователя
-	public GameObject Cam;
-	GameObject obj, objjj, yadrn;
+	public GameObject Cam;		//камера - для ее плавного управления
 	int klik = -1;				//счетчик щелчков
 	public int yadrKilk = 0;	//счетчик попыток
 	Vector3 gruz, yadro, poper;	//начальные координаты
 	Quaternion poperecka;		//начальный угол коромысла
-	float timer = 0;			//таймер для задания промежутка между точками траэктории
 	public int Score = 0;		//счетчик очков
-	public int i = 0;
+	public int i = 0;			//индекс для определения типа ядра
 
 	void OnMouseDown () {
 
@@ -73,7 +71,7 @@ public class Main : MonoBehaviour {
 
 	public void Stvor () {
 		Destroy(GameObject.Find("Yadro"));
-		yadrn  = (GameObject) Instantiate (yadr[i], new Vector3 (-11.285f, 0.81f, 0), Quaternion.identity);
+		GameObject yadrn  = (GameObject) Instantiate (yadr[i], new Vector3 (-11.285f, 0.81f, 0), Quaternion.identity);
 		yadrn.name = "Yadro";
 		yadrn.transform.parent = paryadr.transform;
 		yadrn.GetComponent<DistanceJoint2D>().enabled = true;
@@ -86,7 +84,7 @@ public class Main : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		//созданіе начального ядра
 		Stvor();
 		//начальная позиция
 		gruz = gru.transform.position;

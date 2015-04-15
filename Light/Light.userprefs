@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Katapulta/Assets/Scripts/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Particl/Assets/Bah.cs">
     <Files>
-      <File FileName="../Katapulta/Assets/Scripts/Main.cs" Line="75" Column="1" />
-      <File FileName="../Katapulta/Assets/Scripts/Yadro.cs" Line="1" Column="1" />
+      <File FileName="../Particl/Assets/Bah.cs" Line="7" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class Sdvig : MonoBehaviour {
-	GameObject obj;
-	float x,y,z;
+	public GameObject htxt;	//вспливающий текст
+	GameObject neo;
+	GameObject obj;			//обьект для передачи очков в основной скрипт
+	float x,y,z;			//сюда записать начальние координати, по которим потом можно вичислять сдвиг
 	bool kilk = true; 		//переключатель для одноразового начисления очек
 
 	// Use this for initialization
@@ -21,6 +23,8 @@ public class Sdvig : MonoBehaviour {
 			if (Mathf.Abs(x - transform.position.x)>1) {
 				obj.GetComponent<Main>().Score += 100; 
 				kilk = false;
+				neo = (GameObject) Instantiate (htxt, new Vector3 (x,y+1,z), Quaternion.identity);
+				Destroy(neo, 2);
 			}
 		}
 
