@@ -16,6 +16,9 @@ public class Yadro : MonoBehaviour {
 			vz = (GameObject) Instantiate (vzriv, transform.position, Quaternion.identity);
 			vzr = false;
 			Destroy(vz,1f);
+			Vector2 forc = new Vector2 (2000f, 2000f);
+			Vector2 pos = gameObject.transform.position;
+			gameObject.GetComponent<Rigidbody2D>().AddForceAtPosition (forc, pos, ForceMode2D.Impulse);
 		}
 
 	}
