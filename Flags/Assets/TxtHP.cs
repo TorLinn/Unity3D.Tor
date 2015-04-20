@@ -17,7 +17,8 @@ public class TxtHP : MonoBehaviour {
 		if (gameObject.name == "Velosity") {
 			gameObject.GetComponent<Text>().text = "Priskor = " + GameObject.Find("Sphere").GetComponent<dvig>().priskor;
 		}
-
-	
+		if (gameObject.name == "Stan") {
+			gameObject.GetComponent<Text>().text = "Stan = " + GameObject.Find("Sphere").GetComponent<dvig>().mystan;
+		}
 	}
 }
