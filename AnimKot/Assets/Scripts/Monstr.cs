@@ -4,7 +4,7 @@ using System.Collections;
 public class Monstr : MonoBehaviour {
 
 	public GameObject pulja, kot;
-	public Transform disp, sensj, sensr, sensjp, sensord;
+	public Transform sensj, sensr, sensjp, sensord;
 	public LayerMask lzemlja;
 	bool bzemlja = false;
 	bool rkot = true;
@@ -17,7 +17,7 @@ public class Monstr : MonoBehaviour {
 		if (col.name == "pul2(Clone)") {
 			Destroy (col.gameObject);
 			gameObject.transform.position = new Vector3 (12,2,0);
-			Ruh.Gold +=30;
+			Ruh.pat.Gold +=30;
 		}
 	}
 
@@ -54,8 +54,8 @@ public class Monstr : MonoBehaviour {
 
 	void FixedUpdate () {
 		timer += Time.deltaTime;
-		if (Mathf.Abs (disp.position.y - transform.position.y) < 0.1f) {
-			if (disp.position.x - transform.position.x > 0) {
+		if (Mathf.Abs (Ruh.pat.transform.position.y - transform.position.y) < 0.1f) {
+			if (Ruh.pat.transform.position.x - transform.position.x > 0) {
 				ruh = 1; 
 				Ataka ();
 			} else {

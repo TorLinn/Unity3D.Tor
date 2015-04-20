@@ -4,8 +4,28 @@ using UnityEngine.UI;
 
 public class Ruh : MonoBehaviour {
 
-	public static int Gold = 0;
-	public static int HP = 100;
+	private static Ruh _pat;
+	public static Ruh pat {
+		get {
+			if (_pat == null) {
+				_pat = GameObject.FindObjectOfType<Ruh> ();
+				DontDestroyOnLoad (_pat.gameObject);
+			}
+			return _pat;
+		}
+	}
+	void Awake ()
+	{
+		if (_pat == null) {
+			_pat = this;
+			DontDestroyOnLoad (_pat.gameObject);
+		} else if (this != _pat) {
+			Destroy (this.gameObject);
+		}
+	} 
+
+	public int Gold = 0;
+	public int HP = 100;
 	public Transform sens;
 	public LayerMask laypov;
 	public GameObject pula;
