@@ -46,9 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dvig5.cs" />
      <Compile Include="Assets\Scripts\Dvig3.cs" />
      <Compile Include="Assets\Scripts\Dvig4.cs" />
+     <Compile Include="Assets\Scripts\Dvig5.cs" />
      <Compile Include="Assets\Scripts\InputRoz.cs" />
      <Compile Include="Assets\Scripts\TxtHP.cs" />
      <Compile Include="Assets\Scripts\Ubegayka.cs" />

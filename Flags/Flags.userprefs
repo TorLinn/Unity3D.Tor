@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Vector3Roz.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Tower/Assets/Tower.cs">
     <Files>
-      <File FileName="Assets/Scripts/InputRoz.cs" Line="12" Column="4" />
-      <File FileName="Assets/Scripts/Dvig4.cs" Line="3" Column="1" />
-      <File FileName="Assets/Dvig5.cs" Line="16" Column="121" />
-      <File FileName="Assets/Scripts/Vector3Roz.cs" Line="8" Column="50" />
+      <File FileName="../../Tower/Assets/Tower.cs" Line="45" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
