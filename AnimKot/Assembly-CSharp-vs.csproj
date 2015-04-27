@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BoxHP.cs" />
+     <Compile Include="Assets\GameSettings.cs" />
+     <Compile Include="Assets\HP.cs" />
+     <Compile Include="Assets\Menu.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Doors.cs" />
      <Compile Include="Assets\Scripts\Golda.cs" />
@@ -53,6 +57,9 @@
      <Compile Include="Assets\Scripts\Parallax.cs" />
      <Compile Include="Assets\Scripts\Ruh.cs" />
      <Compile Include="Assets\Scripts\Txt.cs" />
+     <Compile Include="Assets\Settings.cs" />
+     <Compile Include="Assets\SystemSettings.cs" />
+     <Compile Include="Assets\Triger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

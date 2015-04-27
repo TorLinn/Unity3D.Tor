@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Play.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../AnimKot/Assets/Menu.cs">
     <Files>
-      <File FileName="Assets/Play.cs" Line="40" Column="49" />
+      <File FileName="../AnimKot/Assets/Menu.cs" Line="14" Column="24" />
+      <File FileName="../AnimKot/Assets/Scripts/Ruh.cs" Line="41" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

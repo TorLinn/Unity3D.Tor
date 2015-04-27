@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Ruh : MonoBehaviour {
+public class Ruh : MonoBehaviour
+{
 
 	private static Ruh _pat;
 	public static Ruh pat {
@@ -35,14 +36,14 @@ public class Ruh : MonoBehaviour {
 	bool rkot = true;
 	float timer = 0;
 	float ruh = 0;
-	float ruhp=1;
+	float ruhp = 1;
 	Vector3 kam;
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
 		if (col.name == "pulya(Clone)") {
 			Destroy (col.gameObject);
-			HP  = HP - 30;
+			HP = HP - 30;
 			if (HP < 0) {
 				Color color = GetComponent<SpriteRenderer> ().color;
 				color.a = 0.3f;
@@ -58,37 +59,40 @@ public class Ruh : MonoBehaviour {
 	}
 	
 	// Use this for initialization
-	void Start () {
-		kam =  Camera.main.transform.position - gameObject.transform.position;
+	void Start ()
+	{
+		kam = Camera.main.transform.position - gameObject.transform.position;
 		anim = gameObject.GetComponent<Animator> ();
 		rB = gameObject.GetComponent<Rigidbody2D> ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 
 		Camera.main.transform.position = gameObject.transform.position + kam;
 
-		if (zeml && Input.GetKeyDown(KeyCode.Space)) {
-			anim.SetBool("Grunt",false);
-			rB.velocity = new Vector2(rB.velocity.x, 9f);
+		if (zeml && Input.GetKeyDown (KeyCode.Space)) {
+			anim.SetBool ("Grunt", false);
+			rB.velocity = new Vector2 (rB.velocity.x, 9f);
 		}
-		if (Input.GetKeyDown(KeyCode.Q)) {
-			Ataka();
+		if (Input.GetKeyDown (KeyCode.Q)) {
+			Ataka ();
 		}
 		if (gameObject.transform.position.y < -3) {
-			gameObject.transform.position = new Vector3 (0,0,0);
+			gameObject.transform.position = new Vector3 (0, 0, 0);
 		}
 	}
 
-	void FixedUpdate () {
+	void FixedUpdate ()
+	{
 		zeml = Physics2D.OverlapCircle (sens.position, 0.4f, laypov);
 		anim.SetBool ("Grunt", zeml);
 		anim.SetFloat ("YSpeed", rB.velocity.y);
 
 		ruh = Input.GetAxis ("Horizontal");
-		anim.SetFloat ("XSpeed", Mathf.Abs(ruh));
-		rB.velocity = new Vector2 (10*ruh, rB.velocity.y);
+		anim.SetFloat ("XSpeed", Mathf.Abs (ruh));
+		rB.velocity = new Vector2 (10 * ruh, rB.velocity.y);
 
 		if (ruh > 0 && !rkot) {
 			rkot = !rkot;
@@ -96,8 +100,7 @@ public class Ruh : MonoBehaviour {
 			rozmir.x *= -1;
 			transform.localScale = rozmir;
 			ruhp = 1;
-		} 
-		else if (ruh < 0 && rkot) {
+		} else if (ruh < 0 && rkot) {
 			rkot = !rkot;
 			Vector3 rozmir = transform.localScale;
 			rozmir.x *= -1;
