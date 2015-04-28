@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Monstr : MonoBehaviour {
+public class Monstr : MonoBehaviour
+{
 
 	public GameObject pulja, kot;
 	public Transform sensj, sensr, sensjp, sensord;
 	public LayerMask lzemlja;
+	public int mHP = 100;
+	int hp;
 	bool bzemlja = false;
 	bool rkot = true;
 	Rigidbody2D rbody2d;
@@ -15,9 +18,13 @@ public class Monstr : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col)
 	{
 		if (col.name == "pul2(Clone)") {
-			Destroy (col.gameObject);
-			gameObject.transform.position = new Vector3 (12,2,0);
-			Ruh.pat.Gold +=30;
+			mHP -= 30;
+			if (mHP <= 0) {
+				Destroy (col.gameObject);
+				gameObject.transform.position = new Vector3 (12, 2, 0);
+				Ruh.pat.Gold += 30;
+				mHP = hp;
+			}
 		}
 	}
 
@@ -33,26 +40,30 @@ public class Monstr : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		rbody2d = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 		ruh = 1;
+		hp = mHP;
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		if (bzemlja && Physics2D.OverlapCircle (sensjp.position, 0.4f, lzemlja)) {
 			anim.SetBool ("Grunt", false);
 			rbody2d.velocity = new Vector2 (rbody2d.velocity.x, 8f);
 		}
 		if (gameObject.transform.position.y < -3) {
-			gameObject.transform.position = new Vector3 (12,2,0);
+			gameObject.transform.position = new Vector3 (12, 2, 0);
 		}
 	
 	}
 
-	void FixedUpdate () {
+	void FixedUpdate ()
+	{
 		timer += Time.deltaTime;
 		if (Mathf.Abs (Ruh.pat.transform.position.y - transform.position.y) < 0.1f) {
 			if (Ruh.pat.transform.position.x - transform.position.x > 0) {
@@ -71,7 +82,7 @@ public class Monstr : MonoBehaviour {
 			return;
 		}
 		
-		if (!Physics2D.OverlapCircle (sensr.position, 0.3f, lzemlja)  && !Physics2D.OverlapCircle (sensord.position, 0.3f, lzemlja)) {
+		if (!Physics2D.OverlapCircle (sensr.position, 0.3f, lzemlja) && !Physics2D.OverlapCircle (sensord.position, 0.3f, lzemlja)) {
 			ruh *= -1;
 		}
 		
