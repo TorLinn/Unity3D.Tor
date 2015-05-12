@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.MySQL.CSharp", "UnityVS.MySQL.CSharp.csproj", "{F2EE036C-15EC-D421-BC7F-5A4ADAE2BCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.MySQL.CSharp.Editor", "UnityVS.MySQL.CSharp.Editor.csproj", "{9510BCD0-7583-BCC0-2493-2D7E203D81EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2EE036C-15EC-D421-BC7F-5A4ADAE2BCAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EE036C-15EC-D421-BC7F-5A4ADAE2BCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2EE036C-15EC-D421-BC7F-5A4ADAE2BCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EE036C-15EC-D421-BC7F-5A4ADAE2BCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9510BCD0-7583-BCC0-2493-2D7E203D81EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9510BCD0-7583-BCC0-2493-2D7E203D81EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9510BCD0-7583-BCC0-2493-2D7E203D81EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9510BCD0-7583-BCC0-2493-2D7E203D81EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
