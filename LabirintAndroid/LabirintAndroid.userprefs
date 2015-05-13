@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../AnimKot/Assets/Menu.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\Camera Ray\Assets\Scripts\Main.cs">
     <Files>
-      <File FileName="../AnimKot/Assets/Menu.cs" Line="14" Column="24" />
-      <File FileName="../AnimKot/Assets/Scripts/Ruh.cs" Line="41" Column="27" />
+      <File FileName="Assets\cam_upr.cs" Line="33" Column="1" />
+      <File FileName="..\AnimKot\Assets\Scripts\Ruh.cs" Line="1" Column="1" />
+      <File FileName="..\Camera Ray\Assets\Scripts\Main.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
