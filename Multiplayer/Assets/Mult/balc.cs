@@ -7,6 +7,16 @@ public class balc : MonoBehaviour
 	float stime, sdelay, lstime;
 	Vector3 startPos = Vector3.zero, endPos = Vector3.zero;
 
+	void OnTriggerEnter (Collider col)
+	{
+		if (!GetComponent<NetworkView> ().isMine) {
+			if (col.tag == "Player") {
+				col.GetComponent<Client> ().HP -= 30;
+				//Network.Destroy ()
+			}
+		}
+	}
+
 	// Use this for initialization
 	void Start ()
 	{

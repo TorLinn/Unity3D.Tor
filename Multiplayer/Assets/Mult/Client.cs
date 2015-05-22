@@ -44,23 +44,42 @@ public class Client: MonoBehaviour
 	//Змінні для сериалізації (синхронізації)
 	private Quaternion rot;	// кут повороту
 	private int numCurAnim;	// номер анімації для сереалізації 0 - стан спокою, 1 - хотьби 2 - бігу, 3 - прижка 
-	private string myname, vragname;
+	private string vragname;
 	char[] mas = new char[50];
 	int lmas = 0;
 	public GameObject golova;
 	public string nam = "Player";
 
+	public float HP, HPmax = 0;
+	float EnemHP = 0;
+	public Texture bar;
+
 	// рисование бара через GUI
 	void OnGUI ()
 	{
-		Vector3 screenPos = Camera.main.WorldToScreenPoint (golova.transform.position);
-		GUI.Label (new Rect (screenPos.x - 25, Camera.main.pixelRect.yMax - screenPos.y - 20, 100f, 20f), nam);
+		if (GetComponent<MeshRenderer> ().isVisible) {
+			Vector3 screenPos = Camera.main.WorldToScreenPoint (golova.transform.position);
+			GUI.Label (new Rect (screenPos.x - 25, Camera.main.pixelRect.yMax - screenPos.y - 20, 100f, 20f), nam);
+			float dlina = 80f * (HP / HPmax);
+			if (HP > 0) {
+				GUI.DrawTexture (new Rect (screenPos.x - 25, Camera.main.pixelRect.yMax - screenPos.y - 40, dlina, 5f), bar);
+				GUI.Label (new Rect (screenPos.x - 25, Camera.main.pixelRect.yMax - screenPos.y - 60, 100f, 20f), HP.ToString ());
+			}
+		}
+
 	}
 
 	void Start ()
 	{
-
+		HP = HPmax;
 	}
+
+/*	void OnTriggerEnter (Collider col)
+	{
+		if (col.tag == "Bullet") {
+			Network.Destroy (col.gameObject);
+		}
+	}*/
 
 	void Awake ()
 	{
@@ -88,6 +107,9 @@ public class Client: MonoBehaviour
 	{
 		// Перевіряємо чи персонаж наш
 		if (GetComponent<NetworkView> ().isMine) {
+			if (HP < 0) {
+				Network.Disconnect ();
+			}
 			// Якщо так то можна кереувати ним
 			if (Input.GetMouseButtonDown (0)) {
 				GameObject obj = (GameObject)Network.Instantiate (bal, transform.position + transform.TransformDirection (0, 0, 0.6f), transform.rotation, 1);
@@ -169,6 +191,11 @@ public class Client: MonoBehaviour
 		if (stream.isWriting) {
 			rot = transform.rotation;
 			syncPosition = transform.position;
+			if (GetComponent<NetworkView> ().isMine) {
+				mas = nam.ToCharArray ();
+			} else {
+				mas = vragname.ToCharArray ();
+			}
 			mas = nam.ToCharArray ();
 
 			lmas = mas.Length;
@@ -176,6 +203,7 @@ public class Client: MonoBehaviour
 			for (int i=0; i<lmas; i++) {
 				stream.Serialize (ref mas [i]);
 			}
+			stream.Serialize (ref HP);
 			stream.Serialize (ref syncPosition);
 			stream.Serialize (ref rot);
 			stream.Serialize (ref numCurAnim);
@@ -189,6 +217,7 @@ public class Client: MonoBehaviour
 				stream.Serialize (ref mas [i]);
 				vragname += mas [i];
 			}
+			stream.Serialize (ref HP);
 			stream.Serialize (ref syncPosition);
 			stream.Serialize (ref rot);
 			stream.Serialize (ref numCurAnim);
@@ -212,7 +241,7 @@ public class Client: MonoBehaviour
  
 			syncStartPosition = transform.position;
 			syncEndPosition = syncPosition;
-			Debug.Log (GetComponent<NetworkView> ().viewID + " " + syncStartPosition + " " + syncEndPosition);
+			//Debug.Log (GetComponent<NetworkView> ().viewID + " " + syncStartPosition + " " + syncEndPosition);
 		}
 	}
 	
@@ -220,7 +249,8 @@ public class Client: MonoBehaviour
 	private void SyncedMovement ()
 	{
 		syncTime += Time.deltaTime;
-		golova.GetComponent<Name_txt> ().nam = vragname;
+		nam = vragname;
+		//	HP = EnemHP;
 		transform.rotation = Quaternion.Lerp (syncStartRotation, syncEndRotation, syncTime / syncDelay);
 		transform.position = Vector3.Lerp (syncStartPosition, syncEndPosition, syncTime / syncDelay);
 	}
